@@ -1,14 +1,15 @@
+import os
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 import kagglehub
 import tensorflow_hub as hub
 import numpy as np
-import os
 
 # Set the dataset path from an environment variable or use a default path
 DATASET_PATH = os.getenv(
     "DATASET_PATH",
     "/data/dataset.csv"
 )
-print(f"Dataset located at {DATASET_PATH}")
+print(f"[INFO]Dataset located at {DATASET_PATH}")
 
 
 # Download the model using kagglehub for better performance on Kaggle
@@ -17,7 +18,7 @@ model_path = kagglehub.model_download(
 
 # Load the 250-dimensional Wiki-words embedding model from tensorFlow hub
 embed = hub.load(model_path)
-print("Model loaded successfully")
+print("[INFO] Model loaded successfully")
 print(type(embed))
 
 
@@ -48,4 +49,4 @@ simple_encoded = get_word2vec_enc(simple_sentences)
 
 # 3. Calculate a single "sentence vector" for each by taking the mean of its words
 sentence_embeddings = np.array([np.mean(enc, axis=0) for enc in simple_encoded])
-print(f"Shape of our simple sentence embeddings: {sentence_embeddings.shape}")
+print(f"[INFO] Shape of our simple sentence embeddings: {sentence_embeddings.shape}")
