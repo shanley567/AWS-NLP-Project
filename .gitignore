@@ -6,3 +6,8 @@ output/
 
 # Cached Models
 kaggle-cache/
+
+# Python
+pycache/
+__pycache__/
+.pyc
