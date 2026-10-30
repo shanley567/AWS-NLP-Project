@@ -4,3 +4,5 @@ tensorflow_hub
 tensorflow
 numpy
 pandas
+scikit-learn
+matplotlib

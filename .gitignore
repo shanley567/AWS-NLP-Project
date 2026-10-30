@@ -1,2 +1,8 @@
 # Data
 data/
+
+# Output
+output/
+
+# Cached Models
+kaggle-cache/
