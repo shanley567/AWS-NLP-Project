@@ -50,3 +50,6 @@ simple_encoded = get_word2vec_enc(simple_sentences)
 # 3. Calculate a single "sentence vector" for each by taking the mean of its words
 sentence_embeddings = np.array([np.mean(enc, axis=0) for enc in simple_encoded])
 print(f"[INFO] Shape of our simple sentence embeddings: {sentence_embeddings.shape}")
+
+print(f"[INFO] TESTING CODE MOUNTING - VERSION 2.0")
+

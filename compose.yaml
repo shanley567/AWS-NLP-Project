@@ -3,6 +3,7 @@ services:
     build: .
 
     volumes:
+      - ./src:/app/src
       - ./data:/data
 
     environment:
