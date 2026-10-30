@@ -52,5 +52,5 @@ simple_encoded = get_word2vec_enc(simple_sentences)
 sentence_embeddings = np.array([np.mean(enc, axis=0) for enc in simple_encoded])
 print(f"[INFO] Shape of our simple sentence embeddings: {sentence_embeddings.shape}")
 
-print(f"[INFO] TESTING CODE MOUNTING - VERSION 2.0")
+print(f"[INFO] VERSION 2.1 - TESTING MODEL MOUNTING")
 
