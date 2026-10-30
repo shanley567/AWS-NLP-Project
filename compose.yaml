@@ -1,0 +1,9 @@
+services:
+  nlp-app:
+    build: .
+
+    volumes:
+      - ./data:/data
+
+    environment:
+      - DATASET_PATH=/data/dataset.csv
