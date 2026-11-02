@@ -9,4 +9,4 @@ services:
       - ./kaggle-cache:/root/.cache/kagglehub
 
     environment:
-      - DATASET_PATH=/data/dataset.csv
+      - DATASET_PATH=/data/Twitter_Data.csv

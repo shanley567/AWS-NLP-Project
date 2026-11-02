@@ -1,9 +1,10 @@
+import os
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+import kagglehub
+import tensorflow_hub as hub
+import numpy as np
+
 def word_embeddings():
-    import os
-    os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
-    import kagglehub
-    import tensorflow_hub as hub
-    import numpy as np
 
     # Set the dataset path from an environment variable or use a default path
     DATASET_PATH = os.getenv(
