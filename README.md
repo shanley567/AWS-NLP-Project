@@ -4,7 +4,11 @@ A containerized Natural Language Processing (NLP) project built using Python, Do
 
 The project explores text embeddings, sentiment analysis, data preparation, and machine learning workflows using real-world datasets. Development is performed locally inside Docker, providing a foundation for future deployment to AWS services such as ECS Fargate, ECR, S3, and EFS.
 
-Origional tutorial can be found at:`www.kaggle.com/learn-guide/intermediate-nlp](https://www.kaggle.com/learn-guide/intermediate-nlp)`
+Origional tutorial can be found at:
+
+`[www.kaggle.com/learn-guide/intermediate-nlp](https://www.kaggle.com/learn-guide/intermediate-nlp)`
+
+`[www.kaggle.com/learn-guide/advanced-nlp](https://www.kaggle.com/learn-guide/advanced-nlp)`
 
 ---
 
